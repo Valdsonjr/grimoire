@@ -1,0 +1,18 @@
+{
+    "lang": "pt-br",
+    "name": "Grimório V",
+    "short_name": "GrimorioV",
+    "description": "Minha coleção de pequenos feitiços",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/icon512.png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/icon192.png",
+            "sizes": "192x192"
+        }
+    ]
+}
