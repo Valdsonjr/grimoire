@@ -4,6 +4,7 @@
     "short_name": "GrimorioV",
     "description": "Minha coleção de pequenos feitiços",
     "start_url": "/grimoire",
+    "scope": "/grimoire",
     "display": "standalone",
     "icons": [
         {
