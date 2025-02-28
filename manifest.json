@@ -3,7 +3,7 @@
     "name": "Grimório V",
     "short_name": "GrimorioV",
     "description": "Minha coleção de pequenos feitiços",
-    "start_url": "/",
+    "start_url": "/grimoire",
     "display": "standalone",
     "icons": [
         {
