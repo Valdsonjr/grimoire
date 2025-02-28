@@ -328,36 +328,6 @@
           "sizes": "256x256"
         },
         {
-          "src": "/grimoire/android/android-launchericon-512-512.png",
-          "sizes": "512x512",
-          "purpose": "maskable"
-        },
-        {
-          "src": "/grimoire/android/android-launchericon-192-192.png",
-          "sizes": "192x192",
-          "purpose": "maskable"
-        },
-        {
-          "src": "/grimoire/android/android-launchericon-144-144.png",
-          "sizes": "144x144",
-          "purpose": "maskable"
-        },
-        {
-          "src": "/grimoire/android/android-launchericon-96-96.png",
-          "sizes": "96x96",
-          "purpose": "maskable"
-        },
-        {
-          "src": "/grimoire/android/android-launchericon-72-72.png",
-          "sizes": "72x72",
-          "purpose": "maskable"
-        },
-        {
-          "src": "/grimoire/android/android-launchericon-48-48.png",
-          "sizes": "48x48",
-          "purpose": "maskable"
-        },
-        {
           "src": "/grimoire/ios/16.png",
           "sizes": "16x16"
         },
@@ -460,6 +430,48 @@
         {
           "src": "/grimoire/ios/1024.png",
           "sizes": "1024x1024"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "48x48",
+          "src": "/grimoire/android/maskable_icon_x48.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "72x72",
+          "src": "/grimoire/android/maskable_icon_x72.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "96x96",
+          "src": "/grimoire/android/maskable_icon_x96.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "128x128",
+          "src": "/grimoire/android/maskable_icon_x128.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "192x192",
+          "src": "/grimoire/android/maskable_icon_x192.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "384x384",
+          "src": "/grimoire/android/maskable_icon_x384.png",
+          "type": "image/png"
+        },
+        {
+          "purpose": "maskable",
+          "sizes": "512x512",
+          "src": "/grimoire/android/maskable_icon_x512.png",
+          "type": "image/png"
         }
     ]
 }
