@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      <link rel="manifest" href="manifest.json">
-      <script src="installsw.js" async="true"></script>
-      <link rel="stylesheet" href="stylesheet.css">
-      <title>Grimório V</title>
-   </head>
-   <body>
-      <div id="Fuel" class="tabcontent">
-         <h3>Seletor de Combustível</h3>
-         <div class="container">
-            <form action="javascript:calculateBestFuel()">
-               <div class="row">
-                  <div class="col-25"><label for="alcohol">Álcool</label></div>
-                  <div class="col-75"><input type="number" min="0" step="0.001" id="alcohol" name="alcohol" required="true"></div>
-               </div>
-               <div class="row">
-                  <div class="col-25"><label for="gasoline">Gasolina</label></div>
-                  <div class="col-75"><input type="number" min="0" step="0.001" id="gasoline" name="gasoline" required="true"></div>
-               </div>
-               <input type="submit" value="enviar"><span id="fuel-result">here is the result</span>
-            </form>
-         </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <script src="spells.js" async="true"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <title>Grimório de Volsand</title>
+</head>
+
+<body>
+  <section id="tab-content" class="section">
+    <h1 class="title">Seletor de Combustível</h1>
+    <form action="javascript:calculateBestFuel()">
+      <div class="field">
+        <label for="alcohol">Álcool</label>
+        <div class="control has-icons-right">
+          <input class="input" type="number" min="0" step="0.001" id="alcohol" name="alcohol" required="true">
+          <span class="icon is-small is-right">
+            <i class="fas" id="alcohol-icon"></i>
+          </span>
+        </div>
       </div>
-      <script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/grimoire/sw.js');
-}
-      </script>
-   </body>
+      <div class="field">
+        <label for="gasoline">Gasolina</label>
+        <div class="control has-icons-right">
+          <input class="input" type="number" min="0" step="0.001" id="gasoline" name="gasoline" required="true">
+          <span class="icon is-small is-right">
+            <i class="fas" id="gasoline-icon"></i>
+          </span>
+        </div>
+      </div>
+      <br />
+      <input class="button is-primary" type="submit" value="Enviar">
+    </form>
+  </section>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/grimoire/sw.js');
+    }
+  </script>
+</body>
+
 </html>
